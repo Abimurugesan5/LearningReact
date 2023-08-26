@@ -1,17 +1,13 @@
-import './App.css';
 import React from'react'
+import Home from './component/Home';
+import Navebar from './component/Navebar';
 function App() {
-  const title='Welcome to the new blog';
-  const likes=50;
-  // const person ={name:"abi", age:30};
-  const link = "http://www.google.com";
   return (
     <div className="App">
+      <Navebar/>
+
     <div className='contant'>
-      <h1>{title}</h1>
-      <p>Liked{likes} times </p>
-      <p>{Math.random()*10}</p>
-      <a href={link}>Google Site</a>  
+     <Home/>
        </div>
     </div>
   );
